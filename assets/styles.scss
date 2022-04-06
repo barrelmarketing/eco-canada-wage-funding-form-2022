@@ -1,0 +1,245 @@
+
+// BS sass files
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+// Include any default variable overrides here (though functions won't be available)
+$enable-negative-margins: true;
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "light-grey": $gray-200,
+  );
+
+
+// $green-hover-border: rgba($green, 0.5);
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+* {
+    font-family: 'Open Sans';
+}
+#applicant_form {
+    max-width: 960px;
+}
+
+#shi_thankyou,
+#ds4y_thankyou,
+#ynr_thankyou,
+#studentCoopHost,
+#notQualifiedHost {
+    // display: none;
+    font-weight: 600;
+    font-size: 16px;
+    // border: 1px solid rgba;
+    padding: 20px;
+
+}
+
+
+
+label.form-label {
+    
+    /*padding-bottom: 10px;*/
+    padding-right: 2px;
+    
+    font-size: 1rem;
+    color: rgba(70, 67, 67, 0.99);
+    line-height: 1.65;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top:10px;
+}
+
+.form-check>.form-check-label {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.permanent_role_option{
+    margin: 30px auto;
+    width: 90%;
+    padding: 2em;
+    border: 1px solid #efefef;
+    background: #fff;
+}
+.permanent_role_option:hover:not(.disabled) {
+    // background:rgba(122, 124, 123, 0.05);
+    border: 1px solid $success;
+    /* width: 100%; */
+}
+
+.permanent_role_option.disabled * {
+ cursor: not-allowed !important;
+ 
+}
+
+.question {
+    // padding: 10px 20px 20px 20px;
+    margin-bottom:10px;
+    
+}
+
+.question .note {
+    font-size: .8rem;
+    margin-top:10px;
+    font-style: italic;
+    color: #2d2d2d;
+    line-height: 1.25rem !important;
+}
+
+.question .note[name="failure"],
+.permanent_role_option .note[name="failure"] {
+    
+    padding: 20px;
+    margin-top:20px;
+    font-size: 1rem;
+    border: 1px solid #888;
+    
+
+
+}
+
+// .question .form-control {
+//     border-radius: 0;
+//     /* border-color: transparent; */
+//     /* background: transparent; */
+//     /* border-bottom: 1px solid #2d2d2d !important; */
+//     padding-left: 07px;
+//     color: 2d2d2d !important;
+// }
+
+.question .form-check{
+    margin-left: 20px;
+}
+
+.question .form-control::placeholder {
+    color: rgba(70, 67, 67, 0.7) !important;
+}
+
+::-webkit-calendar-picker-indicator {
+    color: #2d2d2d !important;
+}
+
+.form-switch .form-check-input {
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,0.9)'/%3e%3c/svg%3e"); */
+    background-size: 50%;
+    background-position: left;
+
+    /* background-color: transparent !important; */
+    border-color: #2d2d2d;
+}
+
+div:not(.form-switch)>.form-check-label {
+    margin-top: -8px !important;
+}
+
+.form-check-input:checked {
+    /*background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='#1C4316'/%3e%3c/svg%3e") !important;*/
+    background-color: #3b882f !important;
+    background-position: center right;
+    /*background-color: white !important;*/
+    border-color: #2d2d2d;
+}
+
+.form-check-input:hover {
+    /*background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='#1C4316'/%3e%3c/svg%3e") !important;*/
+    background-position: center;
+    /* background-color: rgba(255, 255, 255, 0.3) !important; */
+}
+
+.form-control:hover {
+    background-color: rgba(255, 255, 255, 0.045) !important;
+
+}
+
+.form-control:focus {
+    border-color: #347c29;
+    /*box-shadow: 0 0 0 0.2rem #1c431661;*/
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    outline: 0 !important;
+    box-shadow: none;
+}
+
+.form-control option {
+    color: #2d2d2d;
+}
+
+#fullTime,
+#studentCoop,
+#eligibleBoth,
+#notQualified {
+    // display: none;
+  
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 20px;
+}
+
+
+
+
+.matrixNotQualified {
+    text-align: center;
+    display: none;
+}
+
+
+input::placeholder,
+select {
+    font-size: 12px !important;
+}
+
+select {
+    margin-top: 4px;
+    /* color: rgba(255, 255, 255, .38); */
+}
+
+#candidatePrequalification a,
+#hostPrequalification a {
+    color: rgb(2, 121, 22) !important;
+    font-weight: bold;
+
+}
+
+#candidatePrequalification a:hover,
+#hostPrequalification a:hover {
+    text-decoration: underline !important;
+}
+
+#hostPrequalification ul {
+    padding-left: 1.3em;
+    padding-bottom: 1em;
+}
+
+#hostPrequalification ul li {
+    line-height: 1.5rem
+}
+
+#hostPrequalification ul li ul li {
+    font-style: italic !important;
+}
+
+
+[disabled=disabled]{
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+#debugPanel{
+    // display: none;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    overflow-y:auto;
+    bottom:0;
+    right:0;
+    background: #2d2d2dc0;
+    color: white;
+    padding: 20px;
+}
